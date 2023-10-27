@@ -2,13 +2,17 @@
 
 //Test1: It should return an array of numbers from 0 to the user's given number
 function zeroToNumArray(inputNumber) {
-	const inputToArray = [];
-	for (let i = 0; i <= inputNumber; i++) {
-		inputToArray.push(i);
-	}
-	return inputToArray;
+  const inputToArray = [];
+  for (let i = 0; i <= inputNumber; i++) {
+    const arrayToString = i.toString();
+    if (arrayToString.includes("1")) {
+      inputToArray.push("Beep!");
+    } else {
+      inputToArray.push(i);
+    }
+  }
+  return inputToArray;
 }
-
 
 //Test2: It should replace numbers that contain a "1" with "Beep!"
 
