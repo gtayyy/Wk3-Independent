@@ -24,14 +24,15 @@ function zeroToNumArray(inputNumber) {
 //Test4: It should replace numbers that contain a "3" with "Won't you be my neighbor?"
 
 // UI logic
-function formHandler(event) {
-	event.preventDefault();
-	document.querySelector("h2#result").innerText = ""
-	const result = document.querySelector("h2#result")
-	const userInput = document.querySelector("input#number").value;
-	document.querySelector.append(mrRogers(userInput));
-}
-
-window.addEventListener("load", function () {
-	document.querySelector("form#rogersNumber").addEventListener("submit", formHandler);
-});
+document.addEventListener("DOMContentLoaded", function () {
+	const form = document.querySelector(".rogersNumber");
+	const resultElement = document.getElementById("result");
+	
+	form.addEventListener("submit", function (event) {
+		event.preventDefault();
+		const inputNumber = parseInt(document.getElementById("number").value, 10);
+		const results = zeroToNumArray(inputNumber);
+		resultElement.textContent = "Rest in peace.... knowing that no crimes ever happen in Mr. Rogers neighborhood!: " + results.join(", ");
+		document.getElementById("results").classList.remove("hidden");
+	});
+});	
