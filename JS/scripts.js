@@ -1,9 +1,5 @@
 // Business logic
 
-//Test1: It should return an array of numbers from 0 to the user's given number | PASS
-//Test2: It should replace numbers that contain a "1" with "Beep!" | PASS
-//Test3: It should replace numbers that contain a "2" with "Boop!" | PASS
-//Test4: It should replace numbers that contain a "3" with "Won't you be my neighbor?" | PASS 
 function zeroToNumArray(inputNumber) {
   const inputToArray = [];
   for (let i = 0; i <= inputNumber; i++) {
