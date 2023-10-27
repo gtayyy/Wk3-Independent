@@ -21,8 +21,6 @@ function zeroToNumArray(inputNumber) {
   return inputToArray;
 }
 
-//Test4: It should replace numbers that contain a "3" with "Won't you be my neighbor?"
-
 // UI logic
 document.addEventListener("DOMContentLoaded", function () {
 	const form = document.querySelector(".rogersNumber");
