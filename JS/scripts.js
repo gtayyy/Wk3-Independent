@@ -1,5 +1,4 @@
 // Business logic
-
 function zeroToNumArray(inputNumber) {
   const inputToArray = [];
   for (let i = 0; i <= inputNumber; i++) {
@@ -26,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		event.preventDefault();
 		const inputNumber = parseInt(document.getElementById("number").value, 10);
 		const results = zeroToNumArray(inputNumber);
-		resultElement.textContent = "Rest in peace.... knowing that no crimes ever happen in Mr. Rogers neighborhood!: " + results.join(", ");
+		resultElement.textContent = "Rest in peace.... knowing that no crimes ever happen in Mr. Rogers neighborhood! " + results.join(", ");
 		document.getElementById("results").classList.remove("hidden");
 	});
 });	
